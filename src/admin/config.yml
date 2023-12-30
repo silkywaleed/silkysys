@@ -9,7 +9,7 @@ collections:
     folder: "src/partners"
     create: true
     fields:
-      - { label: "Partners Image", name: "image", widget: "image" }
+      - { label: "Partners Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["partners"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "services"
@@ -17,7 +17,7 @@ collections:
     folder: "src/services"
     create: true
     fields:
-      - { label: "Services Image", name: "image", widget: "image" }
+      - { label: "Services Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["services"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
@@ -27,7 +27,7 @@ collections:
     folder: "src/applications"
     create: true
     fields:
-      - { label: "Application Image", name: "image", widget: "image" }
+      - { label: "Application Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["applications"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "GreenTitle", name: "greenTitle", widget: "string" }
