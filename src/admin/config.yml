@@ -9,39 +9,39 @@ collections:
     folder: "src/partners"
     create: true
     fields:
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Partners Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["partners"] }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "clients"
     label: "Clients"
     folder: "src/clients"
     create: true
     fields:
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Clients Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["clients"] }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "services"
     label: "Services"
     folder: "src/services"
     create: true
     fields:
+      - { label: "Href", name: "href", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Services Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["services"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Href", name: "href", widget: "string" }
   - name: "applications"
     label: "Applications"
     folder: "src/applications"
     create: true
     fields:
+      - { label: "Href", name: "href", widget: "string" }
       - { label: "Application Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["applications"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "GreenTitle", name: "greenTitle", widget: "string" }
       - { label: "NormalTitle", name: "normalTitle", widget: "string" }
       - { label: "BoldTitle", name: "boldTitle", widget: "string" }
-      - { label: "Href", name: "href", widget: "string" }
   - name: "blog"
     label: "Blog"
     folder: "src/blog"
