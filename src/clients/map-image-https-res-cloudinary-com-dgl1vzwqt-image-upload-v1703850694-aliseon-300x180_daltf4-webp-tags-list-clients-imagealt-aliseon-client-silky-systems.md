@@ -1,0 +1,6 @@
+---
+image: https://res.cloudinary.com/dgl1vzwqt/image/upload/v1703850694/Aliseon-300x180_daltf4.webp
+tags:
+  - clients
+imageAlt: Aliseon Client Silky Systems
+---
