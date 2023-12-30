@@ -992,8 +992,8 @@ layout: 'base.njk'
                                                                                                 <div class="row">
                                                                                                     <div class="col-12">
                                                                                                         <div
-                                                                                                                class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init"
-                                                                                                                data-plugin-options="{'items': 5, 'autoplay': false, 'autoplayTimeout': 3000}"
+                                                                                                                class="owl-carousel owl-theme nav-bottom owl-loaded owl-drag owl-carousel-init"
+    data-plugin-options="{'loop': false, 'nav': true, 'dots': false}"
                                                                                                                 style="height: auto;">
                                                                                                         <div class="owl-stage-outer">
                                                                                                             <div class="owl-stage">
@@ -1007,6 +1007,10 @@ layout: 'base.njk'
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+                                                                                                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"></button><button type="button"
+            role="presentation" class="owl-next"></button>
+    </div>
+    <div class="owl-dots disabled"></div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </section>
