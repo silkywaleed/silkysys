@@ -1000,7 +1000,7 @@ layout: 'base.njk'
                                                                                                                     {%- for client in collections.clients | reverse -%}
                                                                                                                         <div class="owl-item">
                                                                                                                             <div>
-                                                                                                                                <img class="img-fluid" src="{{ client.data.image }}" alt="{{ client.data.imageAlt }}" title="{{ client.data.imageAlt }}">
+                                                                                                                                <img class="img-fluid" style="height: 115px;" src="{{ client.data.image }}" alt="{{ client.data.imageAlt }}" title="{{ client.data.imageAlt }}">
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     {%- endfor -%}
@@ -1023,7 +1023,7 @@ layout: 'base.njk'
                                                                                                     <div class="owl-stage-outer">
                                                                                                         <div class="owl-stage" style="transform: translate3d(-1228px, 0px, 0px); transition: all 0.25s ease 0s; width: 3276px;">
                                                                                                             {%- for partner in collections.partners | reverse -%}
-                                                                                                                <div class="owl-item cloned" style="width: 136.5px;">
+                                                                                                                <div class="owl-item" style="width: 136.5px;">
                                                                                                                     <div>
                                                                                                                         <img class="img-fluid" src="{{ partner.data.image }}" alt="{{ partner.data.imageAlt }}" title="{{ partner.data.imageAlt }}"></div>
                                                                                                                     </div>
