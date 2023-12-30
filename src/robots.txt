@@ -1,0 +1,27 @@
+// TEDxSHA Robots.txt File
+
+User-agent: Events TEDxSHA
+Disallow: /suit
+
+User-agent: about Elias Suits
+Disallow: /about
+
+User-agent: Elias Suits and the stars
+Disallow: /elias-and-the-stars
+
+User-agent: team Elias Suits
+Disallow: /team
+
+User-agent: images and videos Elias Suits
+Disallow: /portfolio
+
+User-agent: All Products Elias Suits
+Disallow: /product
+
+User-agent: Team TEDxSHA
+Disallow: /team
+
+User-agent: articles Elias Suits
+Disallow: /blogs
+
+SiteMap: https://elias-designer.com/sitemap.xml

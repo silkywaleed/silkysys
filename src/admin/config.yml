@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/portfolio"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["portfolio"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "services"
+    label: "Services"
+    folder: "src/services"
+    create: true
+    fields:
+      - { label: "Services Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["services"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Href", name: "href", widget: "string" }
+  - name: "people"
+    label: "People"
+    folder: "src/people"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["images"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

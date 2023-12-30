@@ -1,0 +1,22 @@
+---
+layout: 'base.njk'
+---
+
+                    <!--what client says -->
+                    <section class="section bg-gradient-light-white" id="review">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 mx-auto">
+                                    <div class="card rounded shadow ">
+                                     {%- for image in collections.images | reverse -%}
+                                                                    <div
+                                                                        class="text-center mt-2"
+                                                                        data-bs-interval="4000">
+                                                                        <img src="{{ image.data.image }}" alt="{{ imageAlt }}"></div>
+                                                                    {%- endfor -%}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end what client says -->
