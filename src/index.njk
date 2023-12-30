@@ -996,11 +996,12 @@ layout: 'base.njk'
     data-plugin-options="{'loop': false, 'nav': true, 'dots': false}"
                                                                                                                 style="height: auto;">
                                                                                                         <div class="owl-stage-outer">
-                                                                                                            <div class="owl-stage">
-                                                                                                                {%- for client in collections.clients | reverse -%}
-                                                                                                                    <div class="owl-item cloned">
-                                                                                                                        <div>
-                                                                                                                            <img class="img-fluid" src="{{ client.data.image }}" alt="{{ client.data.imageAlt }}" title="{{ client.data.imageAlt }}"></div>
+                                                                                                                <div class="owl-stage">
+                                                                                                                    {%- for client in collections.clients | reverse -%}
+                                                                                                                        <div class="owl-item">
+                                                                                                                            <div>
+                                                                                                                                <img class="img-fluid" src="{{ client.data.image }}" alt="{{ client.data.imageAlt }}" title="{{ client.data.imageAlt }}">
+                                                                                                                            </div>
                                                                                                                         </div>
                                                                                                                     {%- endfor -%}
                                                                                                                 </div>
