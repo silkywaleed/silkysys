@@ -877,22 +877,26 @@ layout: 'base.njk'
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4">
-								<a href="demo-medical-resources-detail.html" class="text-decoration-none">
+
+{%- for app in collections.applications | reverse -%}
+        <div class="col-md-4">
+								<a href="{{ app.data.href }}" class="text-decoration-none">
 									<span class="thumb-info thumb-info-side-image thumb-info-side-image-custom thumb-info-no-zoom thumb-info-no-zoom thumb-info-side-image-custom-highlight d-block">
 										<span class="thumb-info-side-image-wrapper">
-											<img alt="" class="img-fluid" src="https://res.cloudinary.com/dgl1vzwqt/image/upload/v1703939293/%D9%84%D9%82%D8%B7%D8%A9_%D8%B4%D8%A7%D8%B4%D8%A9_2023-12-30_142746_tzgjgn.png">
+											<img class="img-fluid" src="{{ app.data.image }}" alt="{{ app.data.imageAlt }}">
 										</span>
 										<span class="thumb-info-caption p-0">
 											<span class="thumb-info-caption-text p-xl text-center">
-												<h4 class="mb-1"><span style="color: #11E3AB;">Warehouse</span>
-													Management
-													- <span style="font-weight: 600;">(WMS)</span></h4>
+												<h4 class="mb-1"><span style="color: #11E3AB;">{{ app.data.greenTitle }}</span>
+													{{ app.data.normalTitle }}
+													- <span style="font-weight: 600;">{{ app.data.boldTitle }}</span></h4>
 											</span>
 										</span>
 									</span>
 								</a>
 							</div>
+    {%- endfor -%}
+							
 
 							</div>
 						</div>

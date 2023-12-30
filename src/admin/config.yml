@@ -22,14 +22,18 @@ collections:
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Href", name: "href", widget: "string" }
-  - name: "people"
-    label: "People"
-    folder: "src/people"
+  - name: "applications"
+    label: "Applications"
+    folder: "src/applications"
     create: true
     fields:
-      - { label: "Client Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["images"] }
+      - { label: "Application Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["applications"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "GreenTitle", name: "greenTitle", widget: "string" }
+      - { label: "NormalTitle", name: "normalTitle", widget: "string" }
+      - { label: "BoldTitle", name: "boldTitle", widget: "string" }
+      - { label: "Href", name: "href", widget: "string" }
   - name: "blog"
     label: "Blog"
     folder: "src/blog"
