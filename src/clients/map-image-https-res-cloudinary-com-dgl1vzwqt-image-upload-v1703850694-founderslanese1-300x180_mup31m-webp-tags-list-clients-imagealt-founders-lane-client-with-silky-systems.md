@@ -1,0 +1,6 @@
+---
+image: https://res.cloudinary.com/dgl1vzwqt/image/upload/v1703850694/founderslanese1-300x180_mup31m.webp
+tags:
+  - clients
+imageAlt: Founders Lane Client With Silky Systems
+---
