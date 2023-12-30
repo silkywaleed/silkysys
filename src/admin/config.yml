@@ -12,6 +12,14 @@ collections:
       - { label: "Partners Image", name: "image", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["partners"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "clients"
+    label: "Clients"
+    folder: "src/clients"
+    create: true
+    fields:
+      - { label: "Clients Image", name: "image", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["clients"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "services"
     label: "Services"
     folder: "src/services"
