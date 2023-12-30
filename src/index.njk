@@ -1017,10 +1017,10 @@ layout: 'base.njk'
                                                                                                     style="height: auto;">
                                                                                                     <div class="owl-stage-outer">
                                                                                                         <div class="owl-stage" style="transform: translate3d(-1228px, 0px, 0px); transition: all 0.25s ease 0s; width: 3276px;">
-                                                                                                            {%- for image in collections.portfolio | reverse -%}
+                                                                                                            {%- for partner in collections.partners | reverse -%}
                                                                                                                 <div class="owl-item cloned" style="width: 136.5px;">
                                                                                                                     <div>
-                                                                                                                        <img class="img-fluid" src="{{ image.data.image }}" alt="{{ image.data.imageAlt }}"></div>
+                                                                                                                        <img class="img-fluid" src="{{ partner.data.image }}" alt="{{ partner.data.imageAlt }}"></div>
                                                                                                                     </div>
                                                                                                                 {%- endfor -%}
                                                                                                             </div>

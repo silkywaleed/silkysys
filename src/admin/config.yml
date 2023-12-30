@@ -4,13 +4,13 @@ backend:
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
 collections:
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "src/portfolio"
+  - name: "partners"
+    label: "Partners"
+    folder: "src/partners"
     create: true
     fields:
-      - { label: "Client Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["portfolio"] }
+      - { label: "Partners Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["partners"] }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "services"
     label: "Services"
