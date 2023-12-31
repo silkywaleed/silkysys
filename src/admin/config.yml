@@ -33,6 +33,7 @@ collections:
   - name: "applications"
     label: "Applications"
     folder: "src/applications"
+    slug: "{{greenTitle}}"
     create: true
     fields:
       - { label: "Href", name: "href", widget: "string" }
