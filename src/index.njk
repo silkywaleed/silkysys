@@ -801,21 +801,114 @@ layout: 'base.njk'
                                                                                                                                 bottom: 0;
                                                                                                                             }
                                                                                                                         </style>
-                                                                                                                        <h2 class="ggt position-relative d-inline-block font-weight-normal text-6 mb-2 pb-1">ABOUT US</h2>
-                                                                                                                        <h4 style="color: #626262; letter-spacing: unset; padding-left: 5px; margin-top: 10px; ">
-                                                                                                                            We Provide Enterprise Software Services For You
-                                                                                                                        </h4>
-                                                                                                                        <p style="padding-left: 5px; color: black;" class="lead opacity-6">Silky Systems, a cloud solutions leader, enhances
-                                                                                                                            business efficiency through seamless connectivity.</p>
-                                                                                                                        <p style="padding-left: 5px; color: black;" class="opacity-6">Our feature-rich system streamlines end-to-end processes
-                                                                                                                            with advanced capabilities in financial management, POS, inventory, sales orders, purchasing, supplier management, CRM,
-                                                                                                                            HR, fulfillment, warehouse, Delivery, Manufacture & supply chain, streamlining & automating end-to-end processes</p>
-                                                                                                                    </div>
-                                                                                                                    <div class="col-lg-8 align-self-end">
-                                                                                                                        <img src="/assets/img/source-04 (1).svg" alt=""></div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </section>
+                                                                                                                        <h2 
+									
+									class="ggt position-relative d-inline-block font-weight-normal text-6 mb-2 pb-1">ABOUT US</h2>
+									<h4
+									style="color: #626262;
+									letter-spacing: unset;
+									padding-left: 5px;
+									margin-top: 10px;
+									"
+									>We Provide <span class="gg"> Enterprise Software Services </span> For You
+									</h4>
+									<style>
+										.gg {
+											position: relative;
+    z-index: 4;
+										}
+										.gg::before {
+											content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 70%;
+    border-radius: 5px 0 5px 0;
+    transform: translate(-50%, -50%);
+    background: #f9f95a;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    height: 9px;
+    z-index: -1;
+										}
+									</style>
+								<p 
+								style="padding-left: 5px; color: black; padding-top: 10px;font-weight: 500;" class="lead opacity-6">Silky Systems, a cloud solutions leader, enhances
+									business efficiency through seamless connectivity.</p>
+							
+
+									<div class="d-none d-lg-block">
+										<p style="padding-left: 5px; color: black;font-weight: 500;" class="lead">
+											<span class="opacity-6">
+												Our feature-rich system streamlines end-to-end
+												processes with advanced capabilities in financial
+												management, 
+											</span>
+											<span class="vv"> 
+												POS, inventory, sales orders, purchasing,
+												supplier management, CRM, HR, fulfillment,
+												warehouse, Delivery, Manufacture & supply chain, 
+											</span>
+												<span class="opacity-6">streamlining & automating end-to-end processes</span>
+											</p>
+											<style>
+												.vv {
+													color: #021DA5;
+													font-weight: 500;
+												}
+											</style>
+		
+											<hr>
+										<div class="d-flex justify-content-around align-items-center">
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+										</div>
+										
+										<div class="d-flex justify-content-around align-items-center">
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+										</div>
+										
+										<div class="d-flex justify-content-around align-items-center">
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+											<div>
+												<img style="width: 4rem;margin-right: 10px;" src="img/icons-01.svg" alt="">
+												<label class="text-4 mt-1">Fleet Management
+												</label>
+											</div>
+										</div>
+									</div>
+
+
+							</div>
+							<div class="col-lg-8 align-self-end">
+								<img style="width: 100%;" src="https://res.cloudinary.com/dgl1vzwqt/image/upload/v1704016870/1111-01_sprk6n.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
                                                                                                             <section class="bg-color-grey py-5">
                                                                                                                 <div class="container">
                                                                                                                     <div class="text-center">
@@ -926,12 +1019,12 @@ layout: 'base.njk'
 
 				<section class="section m-0 p-0">
 					<div class="container">
-						<div class="row pt-3">
-						<div class="col text-center">
-								<span class="text-center m-0 ff">Applications</span>
-								{# <p class="lead font-weight-normal">List of our features resources</p> #}
-							</div>
-						</div>
+						<div class="row pt-3 mb-3">
+                            <div class="col text-center">
+                                    <span class="text-center m-0 ff">Applications</span>
+                                    {# <p class="lead font-weight-normal">List of our features resources</p> #}
+                                </div>
+                            </div>
 						<div class="row">
 
 {%- for app in collections.applications | reverse -%}
@@ -959,7 +1052,7 @@ layout: 'base.njk'
 					</div>
 				</section>
 
-				<section class="more-about lazyloaded" data-bg-src="/assets/img/ssa.png" style="background-image: url(/assets/img/ssa.png);">
+				<section class="more-about lazyloaded" data-bg-src="https://res.cloudinary.com/dgl1vzwqt/image/upload/v1704014095/ssss_8_tcnnwj.webp" style="background-image: url(https://res.cloudinary.com/dgl1vzwqt/image/upload/v1704014095/ssss_8_tcnnwj.webp);background-repeat: no-repeat;">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 col-lg-6 p-relative overflow-hidden col-cuttin-more-about"></div>
