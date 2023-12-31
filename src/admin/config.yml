@@ -38,7 +38,7 @@ collections:
     fields:
       - { label: "GreenTitle", name: "greenTitle", widget: "string" }
       - { label: "NormalTitle", name: "normalTitle", widget: "string" }
-      - { label: "BoldTitle", name: "boldTitle", widget: "string" }
+      - { label: "BoldTitle", name: "boldTitle", widget: "string", required: false }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Href", name: "href", widget: "string" }
       - { label: "Application Image", name: "image", widget: "string" }
