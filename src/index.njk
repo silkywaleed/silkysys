@@ -1168,14 +1168,15 @@ layout: 'base.njk'
                                                                                                 <div
                                                                                                     class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init"
                                                                                                     data-plugin-options="{'items': 5, 'autoplay': true, 'autoplayTimeout': 3000}"
-                                                                                                    style="height: auto;">
-                                                                                                    <div class="owl-stage-outer">
+                                                                                                                style="height: auto;">
+                                                                                                        <div class="owl-stage-outer">
                                                                                                         <div class="owl-stage" style="transform: translate3d(-1228px, 0px, 0px); transition: all 0.25s ease 0s; width: 3276px;">
                                                                                                             {%- for partner in collections.partners | reverse -%}
-                                                                                                                <div class="owl-item" style="width: 136.5px;">
-                                                                                                                    <div>
-                                                                                                                        <img class="img-fluid" src="{{ partner.data.image }}" alt="{{ partner.data.imageAlt }}" title="{{ partner.data.imageAlt }}"></div>
-                                                                                                                    </div>
+                                                                                                                <div class="owl-item">
+                                                                                                                            <div>
+                                                                                                                                <img class="img-fluid" style="height: 115px;" src="{{ partner.data.image }}" alt="{{ partner.data.imageAlt }}" title="{{ partner.data.imageAlt }}">
+                                                                                                                            </div>
+                                                                                                                        </div>
                                                                                                                 {%- endfor -%}
                                                                                                             </div>
                                                                                                         </div>
