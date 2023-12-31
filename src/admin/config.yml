@@ -36,13 +36,13 @@ collections:
     slug: "{{greenTitle}}"
     create: true
     fields:
-      - { label: "Href", name: "href", widget: "string" }
-      - { label: "Application Image", name: "image", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["applications"] }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "GreenTitle", name: "greenTitle", widget: "string" }
       - { label: "NormalTitle", name: "normalTitle", widget: "string" }
       - { label: "BoldTitle", name: "boldTitle", widget: "string" }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Href", name: "href", widget: "string" }
+      - { label: "Application Image", name: "image", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["applications"] }
   - name: "blog"
     label: "Blog"
     folder: "src/blog"
